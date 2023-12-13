@@ -8,6 +8,9 @@ object Main {
 
     val result = add(3, 7)
     val value = checkValue(5)
+
+    val number = 5
+    val result = factorial(number)
   }
 
   def add(x: Int, y: Int): Int = {
@@ -21,4 +24,12 @@ object Main {
     case _ => "Other"
   }
 
+  // recusive function
+  def factorial(n: Int): Int = {
+    if (n <= 1) {
+      1
+    } else {
+      n * factorial(n - 1) // 使用遞迴呼叫自己來計算階乘
+    }
+  }
 }
