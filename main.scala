@@ -1,3 +1,5 @@
+import java.util.HashMap
+
 // 教學：https://www.udemy.com/course/fast-scala/learn/lecture/27123376#overview
 object Main {
   def main(args: Array[String]): Unit = {
@@ -10,7 +12,12 @@ object Main {
     val value = checkValue(5)
 
     val number = 5
-    val result = factorial(number)
+    val result1 = factorial(number)
+
+    // 你可以在Scala內使用一些Java的工具
+    val map = new HashMap[String, String]
+    map.put("Hello", "World")
+    println(map.get("Hello"))
   }
 
   def add(x: Int, y: Int): Int = {
